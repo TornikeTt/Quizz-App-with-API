@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tornike Chargeishvili" />
+    <meta name="description" content="Quizz App" />
+    <title>Quizz App</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--google font-->
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <!--Jquery-->
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div class="header__container">
+
+                <div class="user__choose">
+                    <p>Category:    <b class="show__selected__category">Entertainment: Books</b> </p>
+                    <p>Difficulty:  <b class="show__selected__difficulty">Easy</b> </p>
+                </div>
+
+                <div class="timer">
+                    <img src="image/watch.png" alt="watch"/> <span>10:00</span> <!-- <=== Timer-->
+                </div> 
+
+            </div>
+        </div>
+
+        <!-- This "form" receives information from the user about: Quiz category and difficulty -->
+           <form class="quizType__handle">
+            <fieldset>
+                <label for="Category">Select Category:</label>
+                <select id="Category" name="category">
+                    <option value="10">Entertainment: Books</option>
+                    <option value="11">Entertainment: Film</option>
+                    <option value="12">Entertainment: Music</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="20">Mythology</option>
+                    <option value="23">History</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="Difficulty">Select Difficulty:</label>
+                <select id="Difficulty" name="difficulty" >
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Start Quiz" class="startQuiz" onclick="get__Data()"/>
+        </form>
+
+        
+        <div class="Test">
+            <div class="Test__container">
+                <small>Question <b class="show_current_question_Num">1</b> / 10</small>
+                <p class="question"></p>
+                <!-- This "form" we use for Choose the answer  -->
+                <form class="form__answers">
+                    <ul>
+                        <li>
+                            <input type="radio"  id="first" name="input_answer"  value="0" class="input_answer" />
+                            <label for="first" id="A"></label>
+                        </li>
+
+                        <li>
+                            <input type="radio"  id="second" name="input_answer"  value="1" class="input_answer" />
+                            <label for="second" id="B" ></label>
+                        </li>
+
+                        <li>
+                            <input type="radio" id="third"  name="input_answer"  value="2" class="input_answer" />
+                            <label for="third"  id="C" ></label>
+                        </li>
+
+                        <li>
+                            <input type="radio" id="fourth" name="input_answer"  value="3" class="input_answer" />
+                            <label for="fourth" id="D" ></label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="buttons__section">
+                <button type="button" class="close__quiz" >Close Quizz</button>
+                <button type="button" class="send__answer" >SEND ANSWER</button>
+            </div>
+        </div>
+        
+     
+
+
+    </main>
+    
+    <script src="animation.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

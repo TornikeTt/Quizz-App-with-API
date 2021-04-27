@@ -1,0 +1,250 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #B2C4CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 650px;
+    height: 550px;
+    background-color: #F2F3FB;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    position: relative;
+}
+
+/*Header  ===========================================================  */
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #5CCDE5;
+    z-index: 20;  
+}
+
+.header__container {
+    font-family: 'Poppins', sans-serif;
+    width: 75%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.user__choose p {
+    color: white;
+    
+}
+
+.show__selected__difficulty  {
+    margin-left: 7px;
+    text-transform: capitalize;
+}
+
+.timer img {
+    vertical-align: -2px;
+    margin-right: 2px;
+}
+
+.timer span {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* style for quiz category and difficulty  =========================================== */
+
+.quizType__handle {
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+fieldset select {
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+fieldset select:focus {
+    outline: 3px solid #5CCDE5;
+}
+
+.startQuiz {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: #5CCDE5;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.startQuiz:hover {
+    opacity: 0.7;
+}  
+
+
+/* style for Test ================================================================ */
+
+.Test {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    /* top: 60px; */
+    top: -800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Test__container {
+    width: 75%;
+    height: 80%;
+    background-color: #ffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    padding: 20px 30px; 
+}
+
+.Test__container > small {
+    color: #B2C4CA;
+}
+
+.question {
+    height: 80px;
+    overflow: auto;
+    margin-top: 10px;
+    color: #96999C;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.form__answers li {
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.form__answers li:hover{
+    background-color: #5CCDE5;
+    color: white;
+}
+
+.form__answers li input {
+    margin-left: 5px;
+}
+
+.form__answers li label {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.buttons__section {
+    margin-top: 20px;
+}
+
+.close__quiz {
+    width: 170px;
+    height: 40px;
+    border: 1px solid #5CCDE5;
+    outline: none;
+    cursor: pointer;
+    margin-right: 50px;
+    background-color: #ffff;
+    color: #5CCDE5;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.close__quiz:hover {
+    background-color: red;
+    color: white;
+}
+
+.send__answer {
+    width: 170px;
+    height: 40px;
+    background-color: #5CCDE5;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
