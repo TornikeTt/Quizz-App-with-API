@@ -235,6 +235,11 @@ fieldset select:focus {
 
 
 @media (max-width: 420px)  {
+    main {
+        width: 400px;
+        height: 550px;
+    }
+
     .header__container{
         justify-content: center;
     }
@@ -244,6 +249,10 @@ fieldset select:focus {
 
     .close__quiz {
         margin-right: 5px;
+    }
+
+    fieldset select {
+        width: 300px;
     }
   
 }
