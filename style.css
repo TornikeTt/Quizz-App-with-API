@@ -247,9 +247,13 @@ fieldset select:focus {
         display: none;
     }
 
-    .close__quiz {
+    .close__quiz, .send__answer {
         margin-right: 5px;
+        font-size: 12px;
+        width: 150px;
     }
+
+    
 
     fieldset select {
         width: 300px;
