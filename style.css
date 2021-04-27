@@ -226,7 +226,27 @@ fieldset select:focus {
 
 
 
+@media (max-width: 465px) {
+    .show__selected__category, 
+    .show__selected__difficulty {
+        font-size: 12px;
+    }
+}
 
+
+@media (max-width: 420px)  {
+    .header__container{
+        justify-content: center;
+    }
+    .user__choose {
+        display: none;
+    }
+
+    .close__quiz {
+        margin-right: 5px;
+    }
+  
+}
 
 
 
